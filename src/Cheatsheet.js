@@ -2,7 +2,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 
-import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn } from './Columns';
+import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn, FullColumn } from './Columns';
 
 const Codepen = ({ id, title }) => (
     <div>
@@ -12,12 +12,19 @@ const Codepen = ({ id, title }) => (
 
 export const Declarations = () => (
     <Row>
+        <Row>
+            <FullColumn md={10} mdOffset={1}>
+                <p>Intro text for declarations comes here.</p>
+            </FullColumn>
+        </Row>
         <WideLeftColumn>
             <Codepen id="qNYoxO" title="Variable Declarations - ES5" />
         </WideLeftColumn>
         <RightColumn>
             <Codepen id="XKqExA" title="Variable Declarations - ES6" />
+            <p>Explanation about constants</p>
             <Codepen id="NArYoL" title="Variable Declarations - ES6, const" />
+            <p>Careful, arrays and objects are pass by variable</p>
             <Codepen id="WxJzWY" title="Variable Declarations - ES6, const2" />
         </RightColumn>
     </Row>
