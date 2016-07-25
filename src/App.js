@@ -34,6 +34,7 @@ class App extends Component {
             </Section>
             <DarkSection>
                 <SectionTitle>Destructuring</SectionTitle>
+                <Cheatsheet.Destructuring />
             </DarkSection>
             <Section>
                 <SectionTitle>Arrow Functions</SectionTitle>

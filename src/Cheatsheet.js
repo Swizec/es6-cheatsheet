@@ -29,3 +29,21 @@ export const Declarations = () => (
         </RightColumn>
     </Row>
 );
+
+export const Destructuring = () => (
+    <Row>
+        <Row>
+            <FullColumn md={10} mdOffset={1}>
+                <p>Intor text for destructuring</p>
+            </FullColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="JKvmRB" title="Variable Destructuring - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="GqdYNV" title="Array Destructuring - ES6" />
+            <Codepen id="VjxEPg" title="Object Destructuring - ES6" />
+            <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
+        </RightColumn>
+    </Row>
+);
