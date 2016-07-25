@@ -1,0 +1,27 @@
+body {
+	padding-top: 50px;
+}
+
+.color-switcher .btn {
+	color: #fff;
+}
+
+.color-switcher .btn:hover {
+	color: #fff;
+}
+
+.btn-lilac {
+	background-color: #9292c0;
+}
+
+.btn-red {
+	background-color: #cb2026;
+}
+
+.btn-green {
+	background-color: #7dbf86;
+}
+
+.btn-blue {
+	background-color: #6492c8;
+}
