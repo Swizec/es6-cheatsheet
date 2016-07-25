@@ -4,7 +4,8 @@ import { Col } from 'react-bootstrap';
 
 export class LeftColumn extends Component {
     render() {
-        let md = this.props.md || 4;
+        let md = this.props.md || 4,
+            mdOffset = this.props.mdOffset || 1;
 
         return (
             <Col xs={12} md={md} mdOffset={1} {...this.props}>
@@ -17,7 +18,7 @@ export class LeftColumn extends Component {
 export class WideLeftColumn extends Component {
     render() {
         return (
-            <LeftColumn md={6} {...this.props}>
+            <LeftColumn md={6} mdOffset={0} {...this.props}>
                 {this.props.children}
             </LeftColumn>
         )

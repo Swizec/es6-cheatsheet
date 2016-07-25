@@ -35,7 +35,7 @@ export const Intro = ({ className }) => (
                 Come back any time you're stuck.
             </p>
             <p>
-                <strong><em><a href="#cheatsheet">Start learning <span className="glyphicon glyphicon-chevron-down" /></a></em></strong>
+                <strong><em><a href="#cheatsheet">Start learning ES6<span className="glyphicon glyphicon-chevron-down" /></a></em></strong>
             </p>
         </LeftColumn>
         <RightColumn>

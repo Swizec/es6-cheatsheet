@@ -30,6 +30,7 @@ class App extends Component {
             <Section>
                 <a name="cheatsheet" />
                 <SectionTitle>Variable Declarations</SectionTitle>
+                <Cheatsheet.Declarations />
             </Section>
             <DarkSection>
                 <SectionTitle>Destructuring</SectionTitle>
