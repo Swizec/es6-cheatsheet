@@ -46,21 +46,6 @@ export const Strings = () => (
     </Row>
 );
 
-export const FunctionalConstructs = () => (
-    <Row>
-        <Row>
-            <SingleColumn>
-                <p>Intro text</p>
-            </SingleColumn>
-        </Row>
-        <WideLeftColumn>
-        </WideLeftColumn>
-        <RightColumn>
-        </RightColumn>
-    </Row>
-);
-
-
 export const Destructuring = () => (
     <Row>
         <Row>
@@ -106,8 +91,14 @@ export const FunctionParameters = () => (
             </SingleColumn>
         </Row>
         <WideLeftColumn>
+            <Codepen id="dXZBdr" title="Schleppy default params - ES5" />
+            <Codepen id="pbVXLx" title="Schleppy rest params - ES5" />
+            <Codepen id="BzxgVJ" title="Schleppy named params - ES5" />
         </WideLeftColumn>
         <RightColumn>
+            <Codepen id="OXkZvx" title="Default params - ES6" />
+            <Codepen id="zBjVjg" title="Rest params - ES6" />
+            <Codepen id="dXZBjX" title="Named params - ES6" />
         </RightColumn>
     </Row>
 );
@@ -141,6 +132,20 @@ export const GettersSetters = () => (
 );
 
 export const Modules = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
+        </RightColumn>
+    </Row>
+);
+
+export const DataModels = () => (
     <Row>
         <Row>
             <SingleColumn>

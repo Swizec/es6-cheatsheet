@@ -44,27 +44,27 @@ class App extends Component {
                 <SectionTitle>Arrow Functions</SectionTitle>
                 <Cheatsheet.ArrowFunctions />
             </DarkSection>
+
             <Section>
-                <SectionTitle>Functional Constructs</SectionTitle>
-                <Cheatsheet.FunctionalConstructs />
-            </Section>
-            <DarkSection>
                 <SectionTitle>Function Parameters</SectionTitle>
                 <Cheatsheet.FunctionParameters />
-            </DarkSection>
-            <Section>
-                <SectionTitle>Classes</SectionTitle>
-                <Cheatsheet.Classes />
             </Section>
             <DarkSection>
-                <SectionTitle>Getters/Setters</SectionTitle>
-                <Cheatsheet.GettersSetters />
+                <SectionTitle>Classes</SectionTitle>
+                <Cheatsheet.Classes />
             </DarkSection>
             <Section>
+                <SectionTitle>Getters/Setters</SectionTitle>
+                <Cheatsheet.GettersSetters />
+            </Section>
+            <DarkSection>
                 <SectionTitle>Modules</SectionTitle>
                 <Cheatsheet.Modules />
+            </DarkSection>
+            <Section>
+                <SectionTitle>Data Models</SectionTitle>
+                <Cheatsheet.DataModels />
             </Section>
-
         </div>
     );
   }
