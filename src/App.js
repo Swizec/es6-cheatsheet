@@ -11,15 +11,41 @@ import Section, { LowSection, FluffySection, DarkSection, SectionTitle, GreenSec
 import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn } from './Columns';
 import Testimonial from './Testimonials';
 
+import * as querystring from 'querystring';
+
 import * as Content from './Content';
 import * as Cheatsheet from './Cheatsheet';
+
+const FreeKeys = ['ForwardJS', 'will'];
 
 class App extends Component {
     constructor(params) {
         super(params);
 
-        this.state = {showUpto: 1,
-                      bought: false};
+        this.state = {showUpto: this.didBuy ? 9 : 1,
+                      bought: this.didBuy};
+    }
+
+    get didBuy() {
+        let query = querystring.parse(window.location.search.replace(/^\?/, '')),
+            stored = window.localStorage.getItem("es6cheatsheet");
+
+        let { product_id, product_permalink, sale_id, key } = query,
+            bought = false;
+
+        if (product_permalink == 'kOCPh' && product_id && sale_id) {
+            bought = true;
+        }else if (FreeKeys.includes(key)) {
+            bought = true;
+        }else if (stored == 'kiwi is my bird') {
+            bought = true;
+        }
+
+        if (bought) {
+            localStorage.setItem("es6cheatsheet", 'kiwi is my bird');
+        }
+
+        return bought;
     }
 
     get declarations() {
@@ -39,6 +65,7 @@ class App extends Component {
                         <br />
                         <strong>Pay what you want</strong>
                         <p>The whole cheatsheet ($0+) and free updates for life.</p>
+                        <p><small>If you got this cheatsheet in the past, <br/>click the link in your email.</small></p>
                     </div>
             </Section>;
         }
