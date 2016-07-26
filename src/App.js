@@ -38,6 +38,7 @@ class App extends Component {
             </DarkSection>
             <Section>
                 <SectionTitle>Arrow Functions</SectionTitle>
+                <Cheatsheet.ArrowFunctions />
             </Section>
             <DarkSection>
                 <SectionTitle>Function Parameters</SectionTitle>

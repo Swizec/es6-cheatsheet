@@ -2,7 +2,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 
-import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn, FullColumn } from './Columns';
+import { WideLeftColumn, RightColumn, SingleColumn } from './Columns';
 
 const Codepen = ({ id, title }) => (
     <div>
@@ -13,9 +13,9 @@ const Codepen = ({ id, title }) => (
 export const Declarations = () => (
     <Row>
         <Row>
-            <FullColumn md={10} mdOffset={1}>
+            <SingleColumn>
                 <p>Intro text for declarations comes here.</p>
-            </FullColumn>
+            </SingleColumn>
         </Row>
         <WideLeftColumn>
             <Codepen id="qNYoxO" title="Variable Declarations - ES5" />
@@ -33,17 +33,36 @@ export const Declarations = () => (
 export const Destructuring = () => (
     <Row>
         <Row>
-            <FullColumn md={10} mdOffset={1}>
+            <SingleColumn>
                 <p>Intor text for destructuring</p>
-            </FullColumn>
+            </SingleColumn>
         </Row>
         <WideLeftColumn>
             <Codepen id="JKvmRB" title="Variable Destructuring - ES5" />
+            <Codepen id="akGgNx" title="Object Destructuring - ES5" />
         </WideLeftColumn>
         <RightColumn>
             <Codepen id="GqdYNV" title="Array Destructuring - ES6" />
             <Codepen id="VjxEPg" title="Object Destructuring - ES6" />
             <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
+        </RightColumn>
+    </Row>
+);
+
+export const ArrowFunctions = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text for arrow functions</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="AXaGXY" title="Function Definitions - ES5" />
+            <Codepen id="OXkZbm" title="This binding - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="yJjdrx" title="Fat arrow functions - ES6" />
+            <Codepen id="RRyzpG" title="Lexical this - ES6" />
         </RightColumn>
     </Row>
 );
