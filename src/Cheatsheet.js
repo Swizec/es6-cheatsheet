@@ -4,9 +4,9 @@ import { Row } from 'react-bootstrap';
 
 import { WideLeftColumn, RightColumn, SingleColumn } from './Columns';
 
-const Codepen = ({ id, title }) => (
+const Codepen = ({ id, title, height }) => (
     <div>
-        <p data-height="307" data-theme-id="0" data-slug-hash={id} data-default-tab="js,result" data-user="swizec" data-embed-version="2" data-editable="true" className="codepen">See the Pen <a href={`https://codepen.io/swizec/pen/${id}`}>{title}</a> by Swizec Teller (<a href="http://codepen.io/swizec">@swizec</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <p data-height={height || 307} data-theme-id="0" data-slug-hash={id} data-default-tab="js,result" data-user="swizec" data-embed-version="2" data-editable="true" className="codepen">See the Pen <a href={`https://codepen.io/swizec/pen/${id}`}>{title}</a> by Swizec Teller (<a href="http://codepen.io/swizec">@swizec</a>) on <a href="http://codepen.io">CodePen</a>.</p>
     </div>
 );
 
@@ -111,8 +111,12 @@ export const Classes = () => (
             </SingleColumn>
         </Row>
         <WideLeftColumn>
+            <Codepen id="EyLBzj" title="Classes - ES5" />
+            <Codepen id="OXkZKk" title="Inheritance - ES5" />
         </WideLeftColumn>
         <RightColumn>
+            <Codepen id="qNYZEq" title="Classes - ES6" />
+            <Codepen id="WxJVbL" title="Inheritance - ES6" />
         </RightColumn>
     </Row>
 );
@@ -127,6 +131,7 @@ export const GettersSetters = () => (
         <WideLeftColumn>
         </WideLeftColumn>
         <RightColumn>
+            <Codepen id="AXaZWj" title="Getters/Setters - ES6" height={507} />
         </RightColumn>
     </Row>
 );
@@ -139,8 +144,10 @@ export const Modules = () => (
             </SingleColumn>
         </Row>
         <WideLeftColumn>
+            <Codepen id="zBjgBA" title="require() - ES5" />
         </WideLeftColumn>
         <RightColumn>
+            <Codepen id="rLvXrN" title="modules - ES6" />
         </RightColumn>
     </Row>
 );
@@ -153,8 +160,11 @@ export const DataModels = () => (
             </SingleColumn>
         </Row>
         <WideLeftColumn>
+            <Codepen id="akGZJB" title="hash - ES5" />
         </WideLeftColumn>
         <RightColumn>
+            <Codepen id="dXZxRV" title="Hash - ES6" />
+            <Codepen id="wWjVpO" title="Set - ES6" />
         </RightColumn>
     </Row>
 );

@@ -5,7 +5,6 @@ import './css/bootstrap-override.css';
 import './css/bootstrap-custom-utils.css';
 import './css/salesbury-lilac.css';
 
-
 import { Row, Col as Column } from 'react-bootstrap';
 import Section, { LowSection, FluffySection, DarkSection, SectionTitle, GreenSection } from './Section';
 import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn } from './Columns';
@@ -62,9 +61,12 @@ class App extends Component {
                 <Cheatsheet.Modules />
             </DarkSection>
             <Section>
-                <SectionTitle>Data Models</SectionTitle>
+                <SectionTitle>Data Structures</SectionTitle>
                 <Cheatsheet.DataModels />
             </Section>
+            <GreenSection>
+                <Content.Footer />
+            </GreenSection>
         </div>
     );
   }

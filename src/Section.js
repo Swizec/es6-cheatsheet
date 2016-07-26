@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap';
 class Section extends Component {
     render() {
         return (
-            <div className={classNames(this.props.className, 'container')}>
+            <div className={classNames(this.props.className, 'container padding-big-bottom')}>
                 <Row className="margin-big-top">
                     {this.props.children}
                 </Row>

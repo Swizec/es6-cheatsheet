@@ -6,6 +6,7 @@ import Section, { SectionTitle, Panel, LowSection } from './Section';
 import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn } from './Columns';
 
 import HipsterMan from './img/happy-hipster-man.jpg';
+import SwizecPic from './img/swizec.png';
 
 export const Header = () => (
     <header className="text-left container">
@@ -44,4 +45,15 @@ export const Intro = ({ className }) => (
             </figure>
         </RightColumn>
     </LowSection>
+);
+
+export const Footer = () => (
+    <Row className="padding-big-top">
+        <WideLeftColumn>
+            <h1>Swizec Teller</h1>
+        </WideLeftColumn>
+        <NarrowRightColumn>
+            <Image src={SwizecPic} circle />
+        </NarrowRightColumn>
+    </Row>
 );
