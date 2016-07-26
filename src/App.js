@@ -4,10 +4,11 @@ import logo from './logo.svg';
 import './css/bootstrap-override.css';
 import './css/bootstrap-custom-utils.css';
 import './css/salesbury-lilac.css';
+import './App.css';
 
 import { Row, Col as Column } from 'react-bootstrap';
 import Section, { LowSection, FluffySection, DarkSection, SectionTitle, GreenSection } from './Section';
-import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn } from './Columns';
+import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn } from './Columns';
 import Testimonial from './Testimonials';
 
 import * as Content from './Content';
@@ -17,15 +18,30 @@ class App extends Component {
     constructor(params) {
         super(params);
 
-        this.state = {showUpto: 9};
+        this.state = {showUpto: 1,
+                      bought: false};
     }
 
     get declarations() {
-        return <Section key="declarations">
+        if (this.state.bought) {
+            return <Section key="declarations">
                     <a name="declarations" />
                     <SectionTitle>Variable Declarations</SectionTitle>
                     <Cheatsheet.Declarations />
                 </Section>;
+        }else{
+            return <Section key="declarations" className="App-buy-wrapper padding-small-bottom">
+                    <a name="declarations" />
+                    <SectionTitle>Variable Declarations</SectionTitle>
+                    <Cheatsheet.Declarations />
+                    <div className="App-buy-overlay">
+                        <a className="gumroad-button" href="https://gum.co/kOCPh">I want this!</a>
+                        <br />
+                        <strong>Pay what you want</strong>
+                        <p>The whole cheatsheet ($0+) and free updates for life.</p>
+                    </div>
+            </Section>;
+        }
     }
 
     get strings() {
@@ -92,13 +108,6 @@ class App extends Component {
                 </Section>;
     }
 
-    componentDidMount() {
-        for (let i = this.state.showUpto; i < 9; i++) {
-            setTimeout(() => this.setState({showUpto: this.state.showUpto+1}),
-                       i*300);
-        }
-    }
-
     render() {
         const sections = [this.declarations, this.strings, this.destructuring,
                           this.arrowFunctions, this.functionParams, this.classes,
@@ -126,7 +135,7 @@ class App extends Component {
                 {cheatsheet}
 
                 <GreenSection>
-                    <Content.Footer />
+                    <Content.Footer bought={this.state.bought} />
                 </GreenSection>
             </div>
         );
