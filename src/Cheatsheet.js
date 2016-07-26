@@ -87,6 +87,7 @@ export const FunctionParameters = () => (
     <Row>
         <Row>
             <SingleColumn>
+                <a name="function-params" />
                 <p>Intro text</p>
             </SingleColumn>
         </Row>
