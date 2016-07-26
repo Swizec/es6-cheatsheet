@@ -100,22 +100,46 @@ export const HowToRead = () => (
     </Row>
 );
 
-export const Footer = () => (
-    <Row className="padding-big-top">
-        <WideLeftColumn>
-            <h1>Swizec Teller</h1>
-            <p>
-                Thank you for reading my ES6 cheatsheet. I hope it's helped make sense of modern JavaScript syntax and behavior. When I update it for ES7, you will get an email.
-            </p>
-            <p>
-                That's me on the right.
-            </p>
-            <p>
-                I've published a couple of JavaScript books and am listed as a reference on <a href="https://en.wikipedia.org/w/index.php?search=swizec+teller&title=Special:Search&go=Go&searchToken=96oe3hbecvgravy12pae129an">2 wikipedia articles</a>. You can find out more about me, <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=swizec%20teller">by googling my name</a>.
-            </p>
-        </WideLeftColumn>
-        <NarrowRightColumn>
-            <Image src={SwizecPic} circle />
-        </NarrowRightColumn>
-    </Row>
-);
+export const Footer = ({ bought }) => {
+    if (bought) {
+        return (
+            <Row className="padding-big-top">
+                <WideLeftColumn>
+                    <h1>Swizec Teller</h1>
+                    <p>
+                        Thank you for reading my ES6 cheatsheet. I hope it's helped make sense of modern JavaScript syntax and behavior. When I update it for ES7, you will get an email.
+                    </p>
+                    <p>
+                        That's me on the right.
+                    </p>
+                    <p>
+                        I've published a couple of JavaScript books and am listed as a reference on <a href="https://en.wikipedia.org/w/index.php?search=swizec+teller&title=Special:Search&go=Go&searchToken=96oe3hbecvgravy12pae129an">2 wikipedia articles</a>. You can find out more about me, <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=swizec%20teller">by googling my name</a>.
+                    </p>
+                </WideLeftColumn>
+                <NarrowRightColumn>
+                    <Image src={SwizecPic} circle />
+                </NarrowRightColumn>
+            </Row>
+        )
+    }else{
+          return (
+            <Row className="padding-big-top">
+                <WideLeftColumn>
+                    <h1>Swizec Teller</h1>
+                    <p>
+                        Hey, I built this cheatsheet because a lot of people at my workshops and readers of my books said they struggled with ES6 syntax. It's meant to give you the basics in about 5 minutes.
+                    </p>
+                    <p>
+                        That's me on the right.
+                    </p>
+                    <p>
+                        I've published a couple of JavaScript books, given talks at many conferences and am listed as a reference on <a href="https://en.wikipedia.org/w/index.php?search=swizec+teller&title=Special:Search&go=Go&searchToken=96oe3hbecvgravy12pae129an">2 wikipedia articles</a>. You can find out more about me, <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=swizec%20teller">by googling my name</a>.
+                    </p>
+                </WideLeftColumn>
+                <NarrowRightColumn>
+                    <Image src={SwizecPic} circle />
+                </NarrowRightColumn>
+            </Row>
+        )
+    }
+};
