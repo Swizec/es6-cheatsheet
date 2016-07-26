@@ -30,6 +30,37 @@ export const Declarations = () => (
     </Row>
 );
 
+export const Strings = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="ZOodXw" title="No string templates - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="QEAXOA" title="String templates - ES6" />
+        </RightColumn>
+    </Row>
+);
+
+export const FunctionalConstructs = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
+        </RightColumn>
+    </Row>
+);
+
+
 export const Destructuring = () => (
     <Row>
         <Row>
@@ -63,6 +94,62 @@ export const ArrowFunctions = () => (
         <RightColumn>
             <Codepen id="yJjdrx" title="Fat arrow functions - ES6" />
             <Codepen id="RRyzpG" title="Lexical this - ES6" />
+        </RightColumn>
+    </Row>
+);
+
+export const FunctionParameters = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
+        </RightColumn>
+    </Row>
+);
+
+export const Classes = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
+        </RightColumn>
+    </Row>
+);
+
+export const GettersSetters = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
+        </RightColumn>
+    </Row>
+);
+
+export const Modules = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>Intro text</p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+        </WideLeftColumn>
+        <RightColumn>
         </RightColumn>
     </Row>
 );

@@ -33,24 +33,36 @@ class App extends Component {
                 <Cheatsheet.Declarations />
             </Section>
             <DarkSection>
-                <SectionTitle>Destructuring</SectionTitle>
-                <Cheatsheet.Destructuring />
+                <SectionTitle>String Templates</SectionTitle>
+                <Cheatsheet.Strings />
             </DarkSection>
             <Section>
+                <SectionTitle>Destructuring</SectionTitle>
+                <Cheatsheet.Destructuring />
+            </Section>
+            <DarkSection>
                 <SectionTitle>Arrow Functions</SectionTitle>
                 <Cheatsheet.ArrowFunctions />
+            </DarkSection>
+            <Section>
+                <SectionTitle>Functional Constructs</SectionTitle>
+                <Cheatsheet.FunctionalConstructs />
             </Section>
             <DarkSection>
                 <SectionTitle>Function Parameters</SectionTitle>
+                <Cheatsheet.FunctionParameters />
             </DarkSection>
             <Section>
                 <SectionTitle>Classes</SectionTitle>
+                <Cheatsheet.Classes />
             </Section>
             <DarkSection>
                 <SectionTitle>Getters/Setters</SectionTitle>
+                <Cheatsheet.GettersSetters />
             </DarkSection>
             <Section>
                 <SectionTitle>Modules</SectionTitle>
+                <Cheatsheet.Modules />
             </Section>
 
         </div>
