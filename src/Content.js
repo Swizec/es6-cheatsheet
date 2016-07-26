@@ -68,7 +68,9 @@ const TOC = () => {
                  ['modules', 'Modules'],
                  ['data-structures', 'Data Structures']];
 
-    const listing = toc.map(([name, label]) => <li><a href={`#${name}`}>{label}</a></li>);
+    const listing = toc.map(([name, label], i) => (
+        <li key={i}><a href={`#${name}`}>{label}</a></li>
+    ));
 
     return (
         <ol>
@@ -90,9 +92,7 @@ export const HowToRead = () => (
                 This ES6 cheatsheet is not an exhaustive list of new features in JavaScript. It's meant to show you the most commonly used features. And yes, ES7/ES2016 became an official standard about 40 days ago. I will add those features soon.
             </p>
             <h3>Table of Contents</h3>
-            <ol>
-                <TOC />
-            </ol>
+            <TOC />
             <p>
                 <small>PS: this website doesn't work without JavaScript</small>
             </p>
