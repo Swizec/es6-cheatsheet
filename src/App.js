@@ -166,7 +166,7 @@ class App extends Component {
                 <GreenSection>
                     <a name="cheatsheet" />
                     <SectionTitle>How to use this ES6 cheatsheet</SectionTitle>
-                    <Content.HowToRead />
+                    <Content.HowToRead bought={this.state.bought} />
                 </GreenSection>
 
                 {cheatsheet}

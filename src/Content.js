@@ -53,7 +53,7 @@ export const Intro = ({ className }) => (
     </LowSection>
 );
 
-const TOC = () => {
+const TOC = ({ bought }) => {
     const toc = [['declarations', 'Variable Declarations'],
                  ['strings', 'String Templates'],
                  ['destructuring', 'Destructuring'],
@@ -64,9 +64,13 @@ const TOC = () => {
                  ['modules', 'Modules'],
                  ['data-structures', 'Data Structures']];
 
-    const listing = toc.map(([name, label], i) => (
-        <li key={i}><a href={`#${name}`}>{label}</a></li>
-    ));
+    const listing = toc.map(([name, label], i) => {
+        if (bought) {
+            return (<li key={i}><a href={`#${name}`}>{label}</a></li>);
+        }else{
+            return (<li key={i}>{label}</li>);
+        }
+    });
 
     return (
         <ol>
@@ -75,7 +79,7 @@ const TOC = () => {
     );
 };
 
-export const HowToRead = () => (
+export const HowToRead = ({ bought }) => (
     <Row>
         <SingleColumn>
             <p>
@@ -88,9 +92,9 @@ export const HowToRead = () => (
                 This ES6 cheatsheet is not an exhaustive list of new features in JavaScript. It's meant to show you the most commonly used features. And yes, ES7/ES2016 became an official standard about 40 days ago. I will add those features soon.
             </p>
             <h3>Table of Contents</h3>
-            <TOC />
+            <TOC bought={bought} />
             <p>
-                <small>PS: this website doesn't work without JavaScript</small>
+                <small>PS: this website doesn't work without JavaScript enabled</small>
             </p>
         </SingleColumn>
     </Row>
