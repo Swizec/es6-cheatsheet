@@ -25,6 +25,8 @@
 
 .App-buy-wrapper {
     position: relative;
+    max-height: 1300px;
+    overflow: hidden;
 }
 
 .App-buy-overlay {

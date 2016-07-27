@@ -61,9 +61,10 @@ class App extends Component {
                     <SectionTitle>Variable Declarations</SectionTitle>
                     <Cheatsheet.Declarations />
                     <div className="App-buy-overlay">
-                        <a className="gumroad-button" href="https://gum.co/kOCPh">I want this!</a>
+                        <a className="gumroad-button" href="https://gum.co/kOCPh">
+                        <strong style={{color: 'black'}}>I want this!</strong></a>
                         <br />
-                        <strong>Pay what you want</strong>
+                        <em>Pay what you want</em>
                         <p>The whole cheatsheet ($0+) and free updates for life.</p>
                         <p><small>If you got this cheatsheet in the past, <br/>click the link in your email.</small></p>
                     </div>

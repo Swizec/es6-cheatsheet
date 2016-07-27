@@ -5,7 +5,7 @@ import { Row, Col as Column, Image, Input, ButtonInput, Carousel, CarouselItem }
 import Section, { SectionTitle, Panel, LowSection } from './Section';
 import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn } from './Columns';
 
-import HipsterMan from './img/happy-hipster-man.jpg';
+import HipsterMan from './img/swizec-at-writethedocs.jpg';
 import SwizecPic from './img/swizec.png';
 
 export const Header = () => (
@@ -43,15 +43,11 @@ export const Intro = ({ className }) => (
                     Learn ES6 <span className="glyphicon glyphicon-chevron-down" />
                 </a></big></em></strong>
             </p>
-            <p>
-                <small>
-                    PS: That's not me on the right, my picture is at the bottom of this page
-                </small>
-            </p>
         </LeftColumn>
         <RightColumn>
             <figure className="text-center">
                 <img src={HipsterMan} className="img-thumbnail" itemProp="image" />
+                <p>That's me at WriteTheDocs Prague 2014</p>
             </figure>
         </RightColumn>
     </LowSection>
@@ -130,7 +126,7 @@ export const Footer = ({ bought }) => {
                         Hey, I built this cheatsheet because a lot of people at my workshops and readers of my books said they struggled with ES6 syntax. It's meant to give you the basics in about 5 minutes.
                     </p>
                     <p>
-                        That's me on the right.
+                        That's me on the right. Modeling my new glasses.
                     </p>
                     <p>
                         I've published a couple of JavaScript books, given talks at many conferences and am listed as a reference on <a href="https://en.wikipedia.org/w/index.php?search=swizec+teller&title=Special:Search&go=Go&searchToken=96oe3hbecvgravy12pae129an">2 wikipedia articles</a>. You can find out more about me, <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=swizec%20teller">by googling my name</a>.
