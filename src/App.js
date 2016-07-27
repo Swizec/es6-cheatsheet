@@ -136,6 +136,15 @@ class App extends Component {
                 </Section>;
     }
 
+    componentDidMount() {
+        if (window.location.pathname == '/thanks') {
+            const script = document.createElement('script');
+            script.src = '//smartbribe.herokuapp.com/script/c161aef18948e557c0d91dd6d7ab8aef.js';
+
+            this.refs.main.appendChild(script);
+        }
+    }
+
     render() {
         const sections = [this.declarations, this.strings, this.destructuring,
                           this.arrowFunctions, this.functionParams, this.classes,
@@ -144,7 +153,7 @@ class App extends Component {
         const cheatsheet = sections.filter((s, i) => i < this.state.showUpto);
 
         return (
-            <div>
+            <div ref="main">
                 <div className="bg-white-dark padding-small-top"></div>
                 <Content.Header />
                 <LowSection className="padding-big-bottom">
@@ -169,5 +178,6 @@ class App extends Component {
         );
     }
 }
+
 
 export default App;
