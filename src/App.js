@@ -16,7 +16,7 @@ import * as querystring from 'querystring';
 import * as Content from './Content';
 import * as Cheatsheet from './Cheatsheet';
 
-const FreeKeys = ['ForwardJS', 'will'];
+const FreeKeys = ['ForwardJS', 'will', 'mailing-list'];
 
 class App extends Component {
     constructor(params) {
