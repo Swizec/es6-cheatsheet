@@ -31,6 +31,8 @@ export const Declarations = () => (
     </Row>
 );
 
+
+/* eslint-disable no-template-curly-in-string */
 export const Strings = () => (
     <Row>
         <Row>
@@ -46,6 +48,7 @@ export const Strings = () => (
         </RightColumn>
     </Row>
 );
+/* eslint-enable no-template-curly-in-string */
 
 export const Destructuring = () => (
     <Row>

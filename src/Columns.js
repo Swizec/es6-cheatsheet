@@ -8,7 +8,7 @@ export class LeftColumn extends Component {
             mdOffset = this.props.mdOffset || 1;
 
         return (
-            <Col xs={12} md={md} mdOffset={1} {...this.props}>
+            <Col xs={12} md={md} mdOffset={mdOffset} {...this.props}>
             {this.props.children}
             </Col>
         );

@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { Row, Col as Column, Image, Input, ButtonInput, Carousel, CarouselItem } from 'react-bootstrap';
+import { Row, Col as Column, Image } from 'react-bootstrap';
 
-import Section, { SectionTitle, Panel, LowSection } from './Section';
-import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn, MiddleColumn, HalfColumn } from './Columns';
+import { LowSection } from './Section';
+import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn } from './Columns';
 
 import HipsterMan from './img/swizec-at-writethedocs.jpg';
 import SwizecPic from './img/swizec.png';
@@ -46,7 +46,7 @@ export const Intro = ({ className }) => (
         </LeftColumn>
         <RightColumn>
             <figure className="text-center">
-                <img src={HipsterMan} className="img-thumbnail" itemProp="image" />
+                <img src={HipsterMan} className="img-thumbnail" itemProp="image" role="presentation" />
                 <p>That's me at WriteTheDocs Prague 2014</p>
             </figure>
         </RightColumn>

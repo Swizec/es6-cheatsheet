@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { Image, Carousel, CarouselItem } from 'react-bootstrap';
-
-import Section from './Section';
+import { Carousel, CarouselItem } from 'react-bootstrap';
 
 const TestimonialData = {
     crocker: {
@@ -16,7 +14,7 @@ const TestimonialData = {
 };
 
 const Testimonial = ({ which }) => {
-    let {img, quote, who} = TestimonialData[which];
+    let { quote, who } = TestimonialData[which];
 
     return (
         <div itemProp="review" itemScope itemType="http://schema.org/Review">

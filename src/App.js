@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 
 import './css/bootstrap-override.css';
 import './css/bootstrap-custom-utils.css';
 import './css/salesbury-lilac.css';
 import './App.css';
 
-import { Row, Col as Column } from 'react-bootstrap';
-import Section, { LowSection, FluffySection, DarkSection, SectionTitle, GreenSection } from './Section';
-import { LeftColumn, WideLeftColumn, RightColumn, NarrowRightColumn, SingleColumn } from './Columns';
+import { Col as Column } from 'react-bootstrap';
+import Section, { LowSection, DarkSection, SectionTitle, GreenSection } from './Section';
 import Testimonial from './Testimonials';
 
 import * as querystring from 'querystring';
@@ -33,11 +31,11 @@ class App extends Component {
         let { product_id, product_permalink, sale_id, key } = query,
             bought = false;
 
-        if (product_permalink == 'kOCPh' && product_id && sale_id) {
+        if (product_permalink === 'kOCPh' && product_id && sale_id) {
             bought = true;
         }else if (FreeKeys.includes(key)) {
             bought = true;
-        }else if (stored == 'kiwi is my bird') {
+        }else if (stored === 'kiwi is my bird') {
             bought = true;
         }
 
@@ -137,7 +135,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        if (window.location.pathname == '/thanks') {
+        if (window.location.pathname === '/thanks') {
             const script = document.createElement('script');
             script.src = '//smartbribe.herokuapp.com/script/c161aef18948e557c0d91dd6d7ab8aef.js';
 
