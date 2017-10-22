@@ -1,64 +1,64 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
-import './index.css'
-
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import "../css/bootstrap-override.css";
+import "../css/bootstrap-custom-utils.css";
+import "../css/salesbury-lilac.css";
+import "./index.css";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+    <div className="cheatsheet">
+        <Helmet>
+            <link
+                rel="stylesheet"
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+                integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+                crossorigin="anonymous"
+            />
+
+            <script async src="//assets.codepen.io/assets/embed/ei.js" />
+            <script async src="https://gumroad.com/js/gumroad.js" />
+
+            <meta name="author" content="Swizec Teller" />
+            <meta name="description" content="Interactive ES6 cheatsheet." />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+            <meta property="og:url" content="https://es6cheatsheet.com" />
+            <meta property="og:title" content="Interactive ES6 cheatsheet" />
+            <meta
+                property="og:image"
+                content="https://es6cheatsheet.com/cover.png"
+            />
+            <meta
+                property="og:description"
+                content="This is an interactive ES6 cheatsheet. 9 sections, 31 runnable code samples."
+            />
+
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@swizec" />
+            <meta name="twitter:creator" content="@swizec" />
+            <meta name="twitter:title" content="Interactive ES6 cheatsheet" />
+            <meta
+                name="twitter:image"
+                content="https://es6cheatsheet.com/cover.png"
+            />
+            <meta
+                name="twitter:description"
+                content="This is an interactive ES6 cheatsheet. 9 sections, 31 runnable code samples."
+            />
+        </Helmet>
+        {children()}
     </div>
-  </div>
-)
+);
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+    children: PropTypes.func
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
