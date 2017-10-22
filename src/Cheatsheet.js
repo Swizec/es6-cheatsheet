@@ -4,10 +4,10 @@ import { Row } from 'react-bootstrap';
 
 import { WideLeftColumn, RightColumn, SingleColumn } from './Columns';
 
-const Codepen = ({ id, title, height }) => (
+const Codepen = ({ id, title, height = 307 }) => (
     <div>
-        <iframe height={height || 307} scrolling='no' src={`//codepen.io/swizec/embed/${id}/?height=${height || 307}&theme-id=0&default-tab=js&embed-version=2`} frameBorder='no' allowTransparency='true' allowFullScreen='true' style={{width: '100%'}}>See the Pen <a href={`http://codepen.io/swizec/pen/${id}/`}>{title}</a> by Swizec Teller (<a href='http://codepen.io/swizec'>@swizec</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+        <iframe height={height || 307} scrolling='no' src={`//codepen.io/swizec/embed/${id}/?height=${height || 307}&theme-id=light&default-tab=js&embed-version=2`} frameBorder='no' allowTransparency='true' allowFullScreen='true' style={{width: '100%'}}>See the Pen <a href={`http://codepen.io/swizec/pen/${id}/`}>{title}</a> by Swizec Teller (<a href='http://codepen.io/swizec'>@swizec</a>) on <a href='http://codepen.io'>CodePen</a>.
+        </iframe>
     </div>
 );
 
@@ -124,7 +124,7 @@ export const Classes = () => (
     <Row>
         <Row>
             <SingleColumn>
-                <p>I am personally both a fan of classes and think they were the wrong step for JavaScript to take. Yes, they make object oriented coding a whole lot nicer, but they also make object oriented programming a whole lot nicer. I like more functions and less objects.</p>
+                <p>I am personally both a fan of classes <i>and</i> think they were the wrong step for JavaScript to take. Yes, they make object oriented programming (OOP) a whole lot nicer, which is good, but they also encourage it. I like to use objects as bags-of-methods, and avoid traditional OOP architectures.</p>
                 <p>
                     That said, classes <i>are</i> useful and ES6 syntax sugar <i>does</i> make them much easier to use. The biggest improvement is to class inheritance.
                 </p>
