@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 
+import "bootstrap/dist/css/bootstrap.css";
 import "../css/bootstrap-override.css";
 import "../css/bootstrap-custom-utils.css";
 import "../css/salesbury-lilac.css";
@@ -11,13 +12,6 @@ import "./index.css";
 const TemplateWrapper = ({ children }) => (
     <div className="cheatsheet">
         <Helmet>
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-                integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-                crossorigin="anonymous"
-            />
-
             <script async src="//assets.codepen.io/assets/embed/ei.js" />
             <script async src="https://gumroad.com/js/gumroad.js" />
 
