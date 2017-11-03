@@ -354,3 +354,23 @@ export const DataModels = () => (
         </RightColumn>
     </Row>
 );
+
+export const Promises = () => (
+    <Row>
+        <Row>
+            <SingleColumn />
+        </Row>
+        <WideLeftColumn />
+        <RightColumn />
+    </Row>
+);
+
+export const Async = () => (
+    <Row>
+        <Row>
+            <SingleColumn />
+        </Row>
+        <WideLeftColumn />
+        <RightColumn />
+    </Row>
+);

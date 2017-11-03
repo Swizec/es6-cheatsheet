@@ -27,7 +27,9 @@ const IndexPage = () => {
             <Classes key="6" />,
             <GettersSetters key="7" />,
             <Modules key="8" />,
-            <DataStructures key="9" />
+            <DataStructures key="9" />,
+            <Promises key="10" />,
+            <Async key="11" />
         ];
 
     const cheatsheet = sections.filter((s, i) => i < showUpto);
@@ -156,6 +158,22 @@ const DataStructures = () => (
         <a name="data-structures" />
         <SectionTitle>Data Structures</SectionTitle>
         <Cheatsheet.DataModels />
+    </Section>
+);
+
+const Promises = () => (
+    <DarkSection key="promises">
+        <a name="promises" />
+        <SectionTitle>Promises</SectionTitle>
+        <Cheatsheet.Promises />
+    </DarkSection>
+);
+
+const Async = () => (
+    <Section key="async-await">
+        <a name="async-await" />
+        <SectionTitle>Async/Await</SectionTitle>
+        <Cheatsheet.Async />
     </Section>
 );
 
