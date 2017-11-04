@@ -6,28 +6,9 @@ import {
     RightColumn,
     SingleColumn
 } from "../components/Columns";
+import { Codepen } from "../components/Misc";
 
-const Codepen = ({ id, title, height = 307 }) => (
-    <div>
-        <iframe
-            height={height || 307}
-            scrolling="no"
-            src={`//codepen.io/swizec/embed/${id}/?height=${height ||
-                307}&theme-id=light&default-tab=js&embed-version=2`}
-            frameBorder="no"
-            allowTransparency="true"
-            allowFullScreen="true"
-            style={{ width: "100%" }}
-        >
-            See the Pen{" "}
-            <a href={`http://codepen.io/swizec/pen/${id}/`}>{title}</a> by
-            Swizec Teller (<a href="http://codepen.io/swizec">@swizec</a>) on{" "}
-            <a href="http://codepen.io">CodePen</a>.
-        </iframe>
-    </div>
-);
-
-export const Declarations = () => (
+const Declarations = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -69,7 +50,7 @@ export const Declarations = () => (
 );
 
 /* eslint-disable no-template-curly-in-string */
-export const Strings = () => (
+const Strings = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -93,7 +74,7 @@ export const Strings = () => (
 );
 /* eslint-enable no-template-curly-in-string */
 
-export const Destructuring = () => (
+const Destructuring = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -123,7 +104,7 @@ export const Destructuring = () => (
     </Row>
 );
 
-export const ArrowFunctions = () => (
+const ArrowFunctions = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -172,7 +153,7 @@ export const ArrowFunctions = () => (
     </Row>
 );
 
-export const FunctionParameters = () => (
+const FunctionParameters = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -216,7 +197,7 @@ export const FunctionParameters = () => (
     </Row>
 );
 
-export const Classes = () => (
+const Classes = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -256,7 +237,7 @@ export const Classes = () => (
     </Row>
 );
 
-export const GettersSetters = () => (
+const GettersSetters = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -284,7 +265,7 @@ export const GettersSetters = () => (
     </Row>
 );
 
-export const Modules = () => (
+const Modules = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -321,7 +302,7 @@ export const Modules = () => (
     </Row>
 );
 
-export const DataModels = () => (
+const DataStructures = () => (
     <Row>
         <Row>
             <SingleColumn>
@@ -355,7 +336,7 @@ export const DataModels = () => (
     </Row>
 );
 
-export const Promises = () => (
+const Promises = () => (
     <Row>
         <Row>
             <SingleColumn />
@@ -365,7 +346,7 @@ export const Promises = () => (
     </Row>
 );
 
-export const Async = () => (
+const AsyncAwait = () => (
     <Row>
         <Row>
             <SingleColumn />
@@ -374,3 +355,17 @@ export const Async = () => (
         <RightColumn />
     </Row>
 );
+
+export const Toc = [
+    ["declarations", "Variable Declarations", Declarations],
+    ["strings", "String Templates", Strings],
+    ["destructuring", "Destructuring", Destructuring],
+    ["arrow-functions", "Arrow Functions", ArrowFunctions],
+    ["function-params", "Function Parameters", FunctionParameters],
+    ["classes", "Classes", Classes],
+    ["getters-setters", "Getters/Setters", GettersSetters],
+    ["modules", "Modules", Modules],
+    ["data-structures", "Data Structures", DataStructures],
+    ["promises", "Promises", Promises],
+    ["async-await", "Async/Await", AsyncAwait]
+];

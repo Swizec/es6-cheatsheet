@@ -10,6 +10,8 @@ import {
     SingleColumn
 } from "../components/Columns";
 
+import { Toc } from "./Cheatsheet";
+
 import HipsterMan from "../img/swizec-at-writethedocs.jpg";
 import SwizecPic from "../img/swizec.png";
 
@@ -78,19 +80,7 @@ export const Intro = ({ className }) => (
 );
 
 const TOC = ({ bought }) => {
-    const toc = [
-        ["declarations", "Variable Declarations"],
-        ["strings", "String Templates"],
-        ["destructuring", "Destructuring"],
-        ["arrow-functions", "Arrow Functions"],
-        ["function-params", "Function Parameters"],
-        ["classes", "Classes"],
-        ["getters-setters", "Getters/Setters"],
-        ["modules", "Modules"],
-        ["data-structures", "Data Structures"]
-    ];
-
-    const listing = toc.map(([name, label], i) => {
+    const listing = Toc.map(([name, label], i) => {
         if (bought) {
             return (
                 <li key={i}>
@@ -133,7 +123,8 @@ export const HowToRead = ({ bought }) => (
             <TOC bought={bought} />
             <p>
                 <small>
-                    PS: this website doesn't work without JavaScript enabled
+                    PS: this website doesn't work well without JavaScript
+                    enabled
                 </small>
             </p>
         </SingleColumn>
