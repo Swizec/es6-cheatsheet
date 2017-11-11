@@ -117,6 +117,27 @@ const Spread = () => (
             <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
             <Codepen id="WXpgow" title="Spread Operator Obj Assign - ES6" />
         </RightColumn>
+        <Row>
+            <SingleColumn>
+                <p>
+                    Another helpful feature of modern JavaScript is that we can
+                    make our code less verbose when setting key values where the
+                    key name is the same as its variable.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen
+                id="mqWGaJ"
+                title="Obj Assign with additional keys - ES5"
+            />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen
+                id="WXpgow"
+                title="Obj Assign with additional keys - ES6"
+            />
+        </RightColumn>
     </Row>
 );
 
@@ -399,7 +420,7 @@ export const Toc = [
     ["declarations", "Variable Declarations", Declarations],
     ["strings", "String Templates and Padding", Strings],
     ["destructuring", "Destructuring", Destructuring],
-    ["spread-operator", "Spread Operator", Spread],
+    ["spread-operator", "Spread Operator and Object creation", Spread],
     ["arrow-functions", "Arrow Functions", ArrowFunctions],
     ["function-params", "Function Parameters", FunctionParameters],
     ["classes", "Classes", Classes],
