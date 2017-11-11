@@ -69,6 +69,30 @@ const Strings = () => (
         <RightColumn>
             <Codepen id="QEAXOA" title="String templates - ES6" />
         </RightColumn>
+        <Row>
+            <SingleColumn>
+                <p>
+                    In ES2016 we got string padding. I personally don't use it,
+                    but if you remember the{" "}
+                    <a href="http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm">
+                        leftpad controversy
+                    </a>{" "}
+                    ... well, it seems a lot of people needed this 😅
+                </p>
+                <p>
+                    You can use <code>padStart</code> to insert padding at the
+                    start of your string and <code>padEnd</code> to insert them
+                    at the end. We use <code>start</code> and <code>end</code>{" "}
+                    to support languages with different reading directions.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="pdeOpw" title="String Padding - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="yPMxKz" title="String Padding - ES6" />
+        </RightColumn>
     </Row>
 );
 
@@ -81,7 +105,7 @@ const Spread = () => (
                     part of destructuring. It's a convenient way to get
                     "everything else that remains". And it works great as an
                     alternative to <code>Object.assign</code> or{" "}
-                    <code>_.extend</code>.
+                    <code>_.extend</code> when making new objects.
                 </p>
             </SingleColumn>
         </Row>
@@ -373,7 +397,7 @@ const AsyncAwait = () => (
 
 export const Toc = [
     ["declarations", "Variable Declarations", Declarations],
-    ["strings", "String Templates", Strings],
+    ["strings", "String Templates and Padding", Strings],
     ["destructuring", "Destructuring", Destructuring],
     ["spread-operator", "Spread Operator", Spread],
     ["arrow-functions", "Arrow Functions", ArrowFunctions],
