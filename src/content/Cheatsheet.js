@@ -49,7 +49,6 @@ const Declarations = () => (
     </Row>
 );
 
-/* eslint-disable no-template-curly-in-string */
 const Strings = () => (
     <Row>
         <Row>
@@ -72,7 +71,30 @@ const Strings = () => (
         </RightColumn>
     </Row>
 );
-/* eslint-enable no-template-curly-in-string */
+
+const Spread = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>
+                    You can think of the spread operator, <code>...</code> as a
+                    part of destructuring. It's a convenient way to get
+                    "everything else that remains". And it works great as an
+                    alternative to <code>Object.assign</code> or{" "}
+                    <code>_.extend</code>.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="ZOoqZa" title="Sort of spread opeartor - ES5" />
+            <Codepen id="gXmdgY" title="Object assign - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
+            <Codepen id="WXpgow" title="Spread Operator Obj Assign - ES6" />
+        </RightColumn>
+    </Row>
+);
 
 const Destructuring = () => (
     <Row>
@@ -93,13 +115,6 @@ const Destructuring = () => (
         <RightColumn>
             <Codepen id="GqdYNV" title="Array Destructuring - ES6" />
             <Codepen id="VjxEPg" title="Object Destructuring - ES6" />
-            <p>
-                I consider the spread operator a subset of destructuring. It's a
-                convenient way to get "everything else that remains". This is
-                more commonly needed in pure functional programming, but it's
-                useful to have available.
-            </p>
-            <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
         </RightColumn>
     </Row>
 );
@@ -360,6 +375,7 @@ export const Toc = [
     ["declarations", "Variable Declarations", Declarations],
     ["strings", "String Templates", Strings],
     ["destructuring", "Destructuring", Destructuring],
+    ["spread-operator", "Spread Operator", Spread],
     ["arrow-functions", "Arrow Functions", ArrowFunctions],
     ["function-params", "Function Parameters", FunctionParameters],
     ["classes", "Classes", Classes],
