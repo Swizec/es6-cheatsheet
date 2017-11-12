@@ -418,14 +418,14 @@ const Promises = () => (
         </Row>
         <WideLeftColumn>
             <Codepen
-                id="zPZMBq"
+                id="qVmYNo"
                 title="Code with callbacks - ES5"
                 height={500}
             />
         </WideLeftColumn>
         <RightColumn>
             <Codepen
-                id="vWmRpp"
+                id="yPbjMV"
                 title="Code with promises - ES6"
                 height={500}
             />
@@ -461,10 +461,32 @@ const Promises = () => (
 const AsyncAwait = () => (
     <Row>
         <Row>
-            <SingleColumn />
+            <SingleColumn>
+                <p>
+                    Async/await is ES2017's answer to Promises hell. I think.
+                    Not sure anyone was complaining about Promises hell, but
+                    async/await is a nicer way to use Promises. The so called
+                    "synchronous way".
+                </p>
+                <p>
+                    You can tag functions as <code>async</code> and use them as
+                    if they were normal functions. To access their future value,
+                    you use <code>await</code>. Similar concepts to Promises,
+                    but fewer parentheses. Once more you can think of
+                    async/await as monads, if that helps.
+                </p>
+            </SingleColumn>
         </Row>
-        <WideLeftColumn />
-        <RightColumn />
+        <WideLeftColumn>
+            <Codepen
+                id="zPwjzP"
+                title="Code with callbacks - ES5"
+                height={400}
+            />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="vWmRpp" title="Async/Await code - ES6" height={400} />
+        </RightColumn>
     </Row>
 );
 
