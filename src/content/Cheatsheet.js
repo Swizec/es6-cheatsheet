@@ -408,7 +408,11 @@ const Promises = () => (
                 </p>
                 <p>
                     You can think of them as monads, if you like. An object that
-                    holds the future, but doesn't have it yet.
+                    holds the future, but doesn't have it yet. You can access
+                    that future by calling <code>.then</code> on a Promise. The
+                    important thing to keep in mind is that everything you{" "}
+                    <code>return</code> from a promises, is automatically
+                    wrapped in a promise.
                 </p>
             </SingleColumn>
         </Row>
@@ -416,14 +420,39 @@ const Promises = () => (
             <Codepen
                 id="zPZMBq"
                 title="Code with callbacks - ES5"
-                height={480}
+                height={500}
             />
         </WideLeftColumn>
         <RightColumn>
             <Codepen
                 id="vWmRpp"
                 title="Code with promises - ES6"
-                height={480}
+                height={500}
+            />
+        </RightColumn>
+        <Row>
+            <SingleColumn>
+                <p>
+                    Where Promises really shine is error handling and ensuring
+                    all promises in a set are resolved before doing stuff. For
+                    error handling you can use the combination of{" "}
+                    <code>reject</code> and <code>.catch</code>, for ensuring
+                    completion of all promises, you use <code>.all</code>.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen
+                id="zPZMBq"
+                title="Code ensuring all callbacks return - ES5"
+                height={500}
+            />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen
+                id="KymRPp"
+                title="Code ensuring all promises resolve - ES6"
+                height={500}
             />
         </RightColumn>
     </Row>
