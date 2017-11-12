@@ -399,10 +399,33 @@ const DataStructures = () => (
 const Promises = () => (
     <Row>
         <Row>
-            <SingleColumn />
+            <SingleColumn>
+                <p>
+                    Promises are ES6's answer to callback hell. That's when you
+                    have too many nested anonymous callbacks and can't tell
+                    what's going on anymore. Promises fix that by giving your
+                    callbacks some structure.
+                </p>
+                <p>
+                    You can think of them as monads, if you like. An object that
+                    holds the future, but doesn't have it yet.
+                </p>
+            </SingleColumn>
         </Row>
-        <WideLeftColumn />
-        <RightColumn />
+        <WideLeftColumn>
+            <Codepen
+                id="zPZMBq"
+                title="Code with callbacks - ES5"
+                height={480}
+            />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen
+                id="vWmRpp"
+                title="Code with promises - ES6"
+                height={480}
+            />
+        </RightColumn>
     </Row>
 );
 
