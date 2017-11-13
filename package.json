@@ -5,6 +5,7 @@
   "author": "Swizec Teller <hi@swizec.com>",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "es6-crawler-detect": "^1.1.1",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-react-helmet": "^1.0.8",

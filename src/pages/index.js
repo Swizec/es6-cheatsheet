@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Crawler from "es6-crawler-detect/es6";
 
 import { Col as Column } from "react-bootstrap";
 import Section, {
@@ -24,6 +25,12 @@ class IndexPage extends React.Component {
     };
 
     get didBuy() {
+        const CrawlerDetector = new Crawler();
+
+        if (CrawlerDetector.isCrawler(navigator.userAgent)) {
+            return true;
+        }
+
         let query = querystring.parse(
                 window.location.search.replace(/^\?/, "")
             ),
