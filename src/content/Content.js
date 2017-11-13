@@ -69,12 +69,14 @@ export const Intro = ({ className }) => (
         </LeftColumn>
         <RightColumn>
             <figure className="text-center">
-                <img
-                    src={HipsterMan}
-                    className="img-thumbnail"
-                    itemProp="image"
-                    role="presentation"
-                />
+                <a href="https://swizec.com/blog">
+                    <img
+                        src={HipsterMan}
+                        className="img-thumbnail"
+                        itemProp="image"
+                        role="presentation"
+                    />
+                </a>
                 <p>That's me at WriteTheDocs Prague 2014</p>
             </figure>
         </RightColumn>
@@ -170,7 +172,9 @@ export const Footer = ({ bought }) => {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <Image src={SwizecPic} circle />
+                    <a href="https://swizec.com/blog">
+                        <Image src={SwizecPic} circle />
+                    </a>
                 </NarrowRightColumn>
             </Row>
         );
@@ -201,7 +205,9 @@ export const Footer = ({ bought }) => {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <Image src={SwizecPic} circle />
+                    <a href="https://swizec.com/blog">
+                        <Image src={SwizecPic} circle />
+                    </a>
                 </NarrowRightColumn>
             </Row>
         );

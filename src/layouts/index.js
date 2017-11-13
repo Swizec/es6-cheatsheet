@@ -16,7 +16,10 @@ const TemplateWrapper = ({ children }) => (
             <script async src="https://gumroad.com/js/gumroad.js" />
 
             <meta name="author" content="Swizec Teller" />
-            <meta name="description" content="Interactive ES6 cheatsheet." />
+            <meta
+                name="description"
+                content="Interactive ES6, ES2016, and ES2017 cheatsheet."
+            />
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
@@ -24,27 +27,33 @@ const TemplateWrapper = ({ children }) => (
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
             <meta property="og:url" content="https://es6cheatsheet.com" />
-            <meta property="og:title" content="Interactive ES6 cheatsheet" />
+            <meta
+                property="og:title"
+                content="Interactive ES6, ES2016, and ES2017 cheatsheet"
+            />
             <meta
                 property="og:image"
                 content="https://es6cheatsheet.com/cover.png"
             />
             <meta
                 property="og:description"
-                content="This is an interactive ES6 cheatsheet. 9 sections, 31 runnable code samples."
+                content="This is an interactive ES6+ cheatsheet. 13 sections, 45 runnable code samples."
             />
 
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content="@swizec" />
             <meta name="twitter:creator" content="@swizec" />
-            <meta name="twitter:title" content="Interactive ES6 cheatsheet" />
+            <meta
+                name="twitter:title"
+                content="Interactive ES6, ES2016, and ES2017 cheatsheet"
+            />
             <meta
                 name="twitter:image"
                 content="https://es6cheatsheet.com/cover.png"
             />
             <meta
                 name="twitter:description"
-                content="This is an interactive ES6 cheatsheet. 9 sections, 31 runnable code samples."
+                content="This is an interactive ES6+ cheatsheet. 13 sections, 45 runnable code samples."
             />
         </Helmet>
         {children()}
