@@ -485,7 +485,39 @@ const AsyncAwait = () => (
             />
         </WideLeftColumn>
         <RightColumn>
-            <Codepen id="vWmRpp" title="Async/Await code - ES6" height={400} />
+            <Codepen
+                id="vWmRpp"
+                title="Async/Await code - ES2017"
+                height={400}
+            />
+        </RightColumn>
+        <Row>
+            <SingleColumn>
+                <p>
+                    When it comes to error handling async/await puts us back in
+                    the era of throw/catch. Some people like that, some don't,
+                    but it's not much different than using <code>.catch</code>.
+                </p>
+                <p>
+                    It doesn't add much to ensuring a set of <code>async</code>{" "}
+                    functions finishes. You still have to use{" "}
+                    <code>Promise.all</code> for that.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen
+                id="zPZMBq"
+                title="Code ensuring all callbacks return - ES5"
+                height={500}
+            />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen
+                id="KymRPp"
+                title="Code ensuring all asyncs resolve - ES2017"
+                height={500}
+            />
         </RightColumn>
     </Row>
 );
