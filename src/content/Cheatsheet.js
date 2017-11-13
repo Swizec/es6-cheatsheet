@@ -396,6 +396,35 @@ const DataStructures = () => (
     </Row>
 );
 
+const ArrayFunctions = () => (
+    <Row>
+        <Row>
+            <SingleColumn>
+                <p>
+                    ES2016 added the much needed <code>includes</code> function
+                    to arrays. That's not a big update, so I thought I'd show
+                    you some helpful Array functions you might not have known
+                    existed. Some have been there for a while.
+                </p>
+                <p>
+                    I often see people reach for Lodash or similar when they
+                    need these primitivies, but there's no need. Unless you have
+                    huge performance needs on the scale of millions of
+                    operations per second.
+                </p>
+            </SingleColumn>
+            <WideLeftColumn />
+            <RightColumn>
+                <Codepen
+                    id="jamxey"
+                    title="Helpful array functions - ES5/6"
+                    height={350}
+                />
+            </RightColumn>
+        </Row>
+    </Row>
+);
+
 const Promises = () => (
     <Row>
         <Row>
@@ -533,6 +562,7 @@ export const Toc = [
     ["getters-setters", "Getters/Setters", GettersSetters],
     ["modules", "Modules", Modules],
     ["data-structures", "Data Structures", DataStructures],
+    ["array-functions", "Helpful array functions", ArrayFunctions],
     ["promises", "Promises", Promises],
     ["async-await", "Async/Await", AsyncAwait]
 ];
