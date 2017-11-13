@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-import Crawler from "es6-crawler-detect/es6";
+import Crawler from "es6-crawler-detect/src";
 
 import { Col as Column } from "react-bootstrap";
 import Section, {
