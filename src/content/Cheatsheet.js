@@ -72,7 +72,7 @@ const Strings = () => (
         <Row>
             <SingleColumn>
                 <p>
-                    In ES2016 we got string padding. I personally don't use it,
+                    In ES2017 we got string padding. I personally don't use it,
                     but if you remember the{" "}
                     <a href="http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm">
                         leftpad controversy

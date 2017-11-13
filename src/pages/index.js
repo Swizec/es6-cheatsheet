@@ -45,7 +45,9 @@ const IndexPage = () => {
             <Content.Intro />
             <GreenSection>
                 <a name="cheatsheet" />
-                <SectionTitle>How to use this ES6 cheatsheet</SectionTitle>
+                <SectionTitle>
+                    How to use this ES6, ES2016, and ES2017 cheatsheet
+                </SectionTitle>
                 <Content.HowToRead bought={bought} />
             </GreenSection>
 
