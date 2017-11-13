@@ -62,8 +62,6 @@ class IndexPage extends React.Component {
             localStorage.setItem("es6cheatsheet", "kiwi is my bird");
         }
 
-        console.log("didBuy?", bought);
-
         return bought;
     }
 
