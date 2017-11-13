@@ -5,24 +5,26 @@
     "author": "Swizec Teller <hi@swizec.com>",
     "dependencies": {
         "bootstrap": "^3.3.7",
-        "es6-crawler-detect": "^1.1.1",
+        "es6-crawler-detect": "https://github.com/Swizec/es6-crawler-detect.git#isCrawler-boolean",
         "gatsby": "^1.9.73",
         "gatsby-link": "^1.6.22",
         "gatsby-plugin-react-helmet": "^1.0.8",
         "react-bootstrap": "^0.31.3",
         "react-lazyload": "^2.3.0"
     },
-    "keywords": ["gatsby", "es6", "cheatsheet"],
+    "keywords": [
+        "gatsby",
+        "es6",
+        "cheatsheet"
+    ],
     "license": "MIT",
     "main": "n/a",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
-        "format":
-            "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+        "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy":
-            "gatsby build && scp -r public/* swizec@swizec.webfactional.com:~/webapps/es6cheatsheet/"
+        "deploy": "gatsby build && scp -r public/* swizec@swizec.webfactional.com:~/webapps/es6cheatsheet/"
     },
     "devDependencies": {
         "prettier": "^1.7.4"

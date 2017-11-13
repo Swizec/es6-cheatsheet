@@ -24,8 +24,19 @@ class IndexPage extends React.Component {
         bought: this.didBuy
     };
 
+    onInitialClientRender() {
+        this.setState({
+            bought: this.didBuy,
+            showUpto: this.didBuy ? 9 : 1
+        });
+    }
+
     get didBuy() {
         const CrawlerDetector = new Crawler();
+
+        if (typeof navigator === "undefined" || typeof window === "undefined") {
+            return true;
+        }
 
         if (CrawlerDetector.isCrawler(navigator.userAgent)) {
             return true;
@@ -50,6 +61,8 @@ class IndexPage extends React.Component {
         if (bought) {
             localStorage.setItem("es6cheatsheet", "kiwi is my bird");
         }
+
+        console.log("didBuy?", bought);
 
         return bought;
     }
