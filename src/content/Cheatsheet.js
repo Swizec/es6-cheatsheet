@@ -49,6 +49,34 @@ const Declarations = () => (
     </Row>
 );
 
+const PayWallDeclarations = ({ bought }) => {
+    if (bought) {
+        return <Declarations />;
+    } else {
+        return (
+            <div className="App-buy-wrapper">
+                <div className="container">
+                    <Declarations />
+                </div>
+                <div className="App-buy-overlay">
+                    <a className="gumroad-button" href="https://gum.co/kOCPh">
+                        <strong style={{ color: "black" }}>I want this!</strong>
+                    </a>
+                    <br />
+                    <em>Pay what you want</em>
+                    <p>The whole cheatsheet ($0+) and free updates for life.</p>
+                    <p>
+                        <small>
+                            If you got this cheatsheet in the past, <br />click
+                            the link in your email.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        );
+    }
+};
+
 const Strings = () => (
     <Row>
         <Row>
@@ -552,7 +580,7 @@ const AsyncAwait = () => (
 );
 
 export const Toc = [
-    ["declarations", "Variable Declarations", Declarations],
+    ["declarations", "Variable Declarations", PayWallDeclarations],
     ["strings", "String Templates and Padding", Strings],
     ["destructuring", "Destructuring", Destructuring],
     ["spread-operator", "Spread Operator and Object creation", Spread],
