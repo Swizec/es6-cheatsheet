@@ -82,7 +82,10 @@ const PayWallDeclarations = ({ bought }) => {
                     </a>
                     <br />
                     <em>Pay what you want</em>
-                    <p>The whole cheatsheet ($0+) and free updates for life.</p>
+                    <p>
+                        The whole cheatsheet ($0+) and free updates for life.<br />
+                        Over 4,100 sold
+                    </p>
                     <p>
                         <small>
                             If you got this cheatsheet in the past, <br />click

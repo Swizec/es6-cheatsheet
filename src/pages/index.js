@@ -33,7 +33,6 @@ class IndexPage extends React.Component {
 
     get didBuy() {
         const CrawlerDetector = new Crawler();
-        return true;
 
         if (typeof navigator === "undefined" || typeof window === "undefined") {
             return true;
