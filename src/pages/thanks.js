@@ -10,11 +10,11 @@ const FacebookBribe = () => (
     <Script url="https://www.smartbribe.com/scripts/bb9bb9ca101b258595f8c77985b884cb.js" />
 );
 
-const SecondPage = () => (
+const ThanksPage = () => (
     <div>
         <h1>Thanks for grabbing the cheatsheet!</h1>
         {Math.random() > 0.5 ? <TwitterBribe /> : <FacebookBribe />}
     </div>
 );
 
-export default SecondPage;
+export default ThanksPage;
