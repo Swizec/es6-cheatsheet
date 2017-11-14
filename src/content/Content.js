@@ -126,9 +126,8 @@ export const HowToRead = ({ bought }) => (
             <h3>Table of Contents</h3>
             <TOC bought={bought} />
             <p>
-                The full cheatsheet uses lazy loading to show 45 Codepen
-                iframes. You might seeempty spaces while scrolling until they
-                load.
+                The full cheatsheet uses lazy loading to show 47 Codepen
+                iframes. You might see empty spaces while they load.
             </p>
             <p>
                 <small>
