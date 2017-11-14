@@ -11,6 +11,7 @@
         "gatsby-plugin-react-helmet": "^1.0.8",
         "react-bootstrap": "^0.31.3",
         "react-facebook-pixel": "^0.1.0",
+        "react-ga": "^2.3.5",
         "react-lazyload": "^2.3.0",
         "react-load-script": "^0.0.6"
     },
