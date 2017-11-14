@@ -71,21 +71,18 @@ class TemplateWrapper extends React.Component {
                     />
                     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-                    <meta
-                        property="og:url"
-                        content="https://es6cheatsheet.com"
-                    />
+                    <meta property="og:url" content="https://es2017.io" />
                     <meta
                         property="og:title"
                         content="Interactive ES6, ES2016, and ES2017 cheatsheet"
                     />
                     <meta
                         property="og:image"
-                        content="https://es6cheatsheet.com/cover.png"
+                        content="https://es2017.io/cover.png"
                     />
                     <meta
                         property="og:description"
-                        content="This is an interactive ES6+ cheatsheet. 13 sections, 45 runnable code samples."
+                        content="This is an interactive ES6+ cheatsheet. 13 sections, 47 runnable code samples."
                     />
 
                     <meta name="twitter:card" content="summary" />
@@ -97,11 +94,11 @@ class TemplateWrapper extends React.Component {
                     />
                     <meta
                         name="twitter:image"
-                        content="https://es6cheatsheet.com/cover.png"
+                        content="https://es2017.io/cover.png"
                     />
                     <meta
                         name="twitter:description"
-                        content="This is an interactive ES6+ cheatsheet. 13 sections, 45 runnable code samples."
+                        content="This is an interactive ES6+ cheatsheet. 13 sections, 47 runnable code samples."
                     />
                     <title>
                         Interactive JavaScript ES6, ES2016, and ES2017
