@@ -104,12 +104,12 @@ export const HowToRead = ({ bought }) => (
         <SingleColumn>
             <p>
                 Welcome to the interactive ES6+ Cheatsheet. It's organized into{" "}
-                <strong>13 sections and 45 code samples</strong>. Each section
-                has two columns: <strong>On the left</strong>, there's the old
-                way of doing things. It uses the JavaScript you already know.{" "}
-                <strong>On the right</strong>, there's the new way of doing
-                things. It uses ES6, ES2016, and ES2017 to show you how to get
-                the same result with modern syntax.
+                <strong>{Toc.length} sections and 47 code samples</strong>. Each
+                section has two columns: <strong>On the left</strong>, there's
+                the old way of doing things. It uses the JavaScript you already
+                know. <strong>On the right</strong>, there's the new way of
+                doing things. It uses ES6, ES2016, and ES2017 to show you how to
+                get the same result with modern syntax.
             </p>
             <p>
                 Code samples have two tabs. The first shows you the code, the
