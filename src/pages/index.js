@@ -20,19 +20,20 @@ const FreeKeys = ["mailing-list"];
 
 class IndexPage extends React.Component {
     state = {
-        showUpto: this.didBuy ? 9 : 1,
+        showUpto: this.didBuy ? 1000 : 1,
         bought: this.didBuy
     };
 
     onInitialClientRender() {
         this.setState({
             bought: this.didBuy,
-            showUpto: this.didBuy ? 9 : 1
+            showUpto: this.didBuy ? 1000 : 1
         });
     }
 
     get didBuy() {
         const CrawlerDetector = new Crawler();
+        return true;
 
         if (typeof navigator === "undefined" || typeof window === "undefined") {
             return true;

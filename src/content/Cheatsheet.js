@@ -46,6 +46,24 @@ const Declarations = () => (
             </p>
             <Codepen id="WxJzWY" title="Variable Declarations - ES6, const2" />
         </RightColumn>
+        <Row>
+            <SingleColumn>
+                <p>
+                    One of my favorite features present in most modern
+                    JavaScript codebases is omitting repetitive object keys. I
+                    don't think this is quite in the standard yet, but it works
+                    in most React-based codebases via{" "}
+                    <a href="https://babeljs.io/">Babel</a>. I include it
+                    because it's commonly used in the wild.
+                </p>
+            </SingleColumn>
+        </Row>
+        <WideLeftColumn>
+            <Codepen id="bYRmgw" title="Repetitive keys - ES5" />
+        </WideLeftColumn>
+        <RightColumn>
+            <Codepen id="Xzgxjq" title="Avoid repeating keys - ES6" />
+        </RightColumn>
     </Row>
 );
 
@@ -68,7 +86,7 @@ const PayWallDeclarations = ({ bought }) => {
                     <p>
                         <small>
                             If you got this cheatsheet in the past, <br />click
-                            the link in your email.
+                            the link in your email to unlock.
                         </small>
                     </p>
                 </div>
@@ -131,40 +149,39 @@ const Spread = () => (
                 <p>
                     You can think of the spread operator, <code>...</code> as a
                     part of destructuring. It's a convenient way to get
-                    "everything else that remains". And it works great as an
-                    alternative to <code>Object.assign</code> or{" "}
-                    <code>_.extend</code> when making new objects.
+                    "everything else that remains" from an Array. The object
+                    spread operatoro is also a great alternative to{" "}
+                    <code>Object.assign</code> or <code>_.extend</code> when
+                    making objects.
                 </p>
             </SingleColumn>
         </Row>
         <WideLeftColumn>
-            <Codepen id="ZOoqZa" title="Sort of spread opeartor - ES5" />
-            <Codepen id="gXmdgY" title="Object assign - ES5" />
+            <Codepen
+                id="ZOoqZa"
+                title="Sort of spread opeartor - ES5"
+                height={400}
+            />
         </WideLeftColumn>
         <RightColumn>
-            <Codepen id="ZOoqZa" title="Spread Operator - ES6" />
-            <Codepen id="WXpgow" title="Spread Operator Obj Assign - ES6" />
+            <Codepen id="jawvdr" title="Spread Operator - ES6" height={400} />
         </RightColumn>
         <Row>
             <SingleColumn>
                 <p>
-                    Another helpful feature of modern JavaScript is that we can
-                    make our code less verbose when setting key values where the
-                    key name is the same as its variable.
+                    Object spread is still a stage 3 proposal, but looks like a
+                    sure bet to make it into the standard soon. Many browsers
+                    support it and it works by default in most React-based
+                    codebases via Babel. I include it here because it's commonly
+                    used in the wild.
                 </p>
             </SingleColumn>
         </Row>
         <WideLeftColumn>
-            <Codepen
-                id="mqWGaJ"
-                title="Obj Assign with additional keys - ES5"
-            />
+            <Codepen id="gXmdgY" title="Object assign - ES5" />
         </WideLeftColumn>
         <RightColumn>
-            <Codepen
-                id="WXpgow"
-                title="Obj Assign with additional keys - ES6"
-            />
+            <Codepen id="WXpgow" title="Spread Operator Obj Assign - ES6" />
         </RightColumn>
     </Row>
 );
@@ -330,19 +347,27 @@ const GettersSetters = () => (
         <Row>
             <SingleColumn>
                 <p>
-                    I'm still not sure how <i>useful</i> getters and setters
-                    are, but they definitely look cool. There's nothing like it
-                    in ES5, but similar features do exist in other languages.
+                    Getters and setters are one of those{" "}
+                    <i>"Whoa that's cool ... what do I do with it?"</i>. They
+                    let you make methods pretend to be class properties. Or to
+                    wrap properties in functions, if you prefer.
                 </p>
                 <p>
-                    The concept is simple: you define an object property that is
-                    actually a function, or a pair of functions. With getters,
-                    it's a neat way to manipulate data when it's accessed. With
-                    setters, it's a neat way to validate data when it's set.
+                    There's nothing like it in ES5, but similar features do
+                    exist in other languages.
+                </p>
+                <p>
+                    <b>The concept goes like this:</b> you define an object
+                    property that is actually a function, or a pair of
+                    functions. With getters, it's a neat way to manipulate data
+                    when it's accessed. With setters, it's a neat way to
+                    validate data when it's set.
                 </p>
                 <p>
                     You <i>could</i> just use functions directly, but this is a
-                    nice abstraction.
+                    nice abstraction. <a href="https://mobx.js.org/">MobX</a>,
+                    for example, uses this to implement its state management
+                    machinery.
                 </p>
             </SingleColumn>
         </Row>
@@ -432,7 +457,8 @@ const ArrayFunctions = () => (
                     ES2016 added the much needed <code>includes</code> function
                     to arrays. That's not a big update, so I thought I'd show
                     you some helpful Array functions you might not have known
-                    existed. Some have been there for a while.
+                    existed. Some have been there for a while. All have become
+                    more useful with the addition of arrow functions.
                 </p>
                 <p>
                     I often see people reach for Lodash or similar when they
@@ -446,7 +472,7 @@ const ArrayFunctions = () => (
                 <Codepen
                     id="jamxey"
                     title="Helpful array functions - ES5/6"
-                    height={350}
+                    height={500}
                 />
             </RightColumn>
         </Row>
@@ -583,7 +609,7 @@ export const Toc = [
     ["declarations", "Variable Declarations", PayWallDeclarations],
     ["strings", "String Templates and Padding", Strings],
     ["destructuring", "Destructuring", Destructuring],
-    ["spread-operator", "Spread Operator and Object creation", Spread],
+    ["spread-operator", "Spread Operator", Spread],
     ["arrow-functions", "Arrow Functions", ArrowFunctions],
     ["function-params", "Function Parameters", FunctionParameters],
     ["classes", "Classes", Classes],

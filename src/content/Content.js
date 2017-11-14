@@ -19,7 +19,7 @@ export const Header = () => (
     <header className="text-left container">
         <Row>
             <Column md={10} mdOffset={1}>
-                <h1>How are your ES6, ES2016, and ES2017?</h1>
+                <h1>How's your ES6, ES2016, and ES2017?</h1>
                 <p className="lead">
                     Learn enough modern JavaScript to get by with this
                     interactive cheatsheet.
