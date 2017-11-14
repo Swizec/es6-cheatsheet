@@ -24,13 +24,6 @@ class IndexPage extends React.Component {
         bought: this.didBuy
     };
 
-    onInitialClientRender() {
-        this.setState({
-            bought: this.didBuy,
-            showUpto: this.didBuy ? 1000 : 1
-        });
-    }
-
     get didBuy() {
         const CrawlerDetector = new Crawler();
 
