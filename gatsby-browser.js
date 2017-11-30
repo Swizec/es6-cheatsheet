@@ -2,7 +2,7 @@ const FBPixel = require("react-facebook-pixel");
 const ReactGA = require("react-ga");
 const querystring = require("querystring");
 
-const FreeKeys = ["mailing-list"];
+const FreeKeys = ["mailing-list", "bundler"];
 
 function updateBought() {
     let query = querystring.parse(window.location.search.replace(/^\?/, "")),

@@ -16,7 +16,7 @@ import * as querystring from "querystring";
 import * as Content from "../content/Content";
 import { Toc } from "../content/Cheatsheet";
 
-const FreeKeys = ["mailing-list"];
+const FreeKeys = ["mailing-list", "bundler"];
 
 class IndexPage extends React.Component {
     state = {
